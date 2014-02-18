@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+require 'gem-list'
+require 'optparse'
+include GemList
+
+options = {:l => nil, :i => nil}
+
+optparse = OptionParser.new do |opts|
+
+	opts.banner = "Usage: gem-list [options] "
+
+	opts.on('-l', '--list', 'List all the gems installed locally') do
+		options[:l] = true
+	end
+
+	opts.on('-i', '--isInstalled', 'Find out if a gem is installed locally or not') do |gemName|
+		options[:i] = true
+	end
+
+  	opts.on( '-h', '--help', 'Display this screen' ) do
+    	puts opts
+    	exit
+  	end
+end
+
+optparse.parse!
+
+if options[:l] != nil
+	puts list
+elsif options[:i] != nil
+	ARGV.each do|gemName|
+		puts "#{gemName} : #{isInstalled(gemName) ? :Yes : :No}"
+ 	end
+else
+	puts "Not a valid option. See help!"
+end
