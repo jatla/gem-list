@@ -5,13 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = "gem-list"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jatla"]
   s.date = "2014-02-18"
   s.description = "This requires some thought. isn't it?"
   s.email = "jayaprakash.atla@gmail.com"
+  s.executables = ["gem-list"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -20,11 +21,50 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bin/gem-list",
+    "gem-list.gemspec",
     "lib/gem-list.rb",
+    "rdoc/GemList.html",
+    "rdoc/README_rdoc.html",
+    "rdoc/created.rid",
+    "rdoc/images/add.png",
+    "rdoc/images/brick.png",
+    "rdoc/images/brick_link.png",
+    "rdoc/images/bug.png",
+    "rdoc/images/bullet_black.png",
+    "rdoc/images/bullet_toggle_minus.png",
+    "rdoc/images/bullet_toggle_plus.png",
+    "rdoc/images/date.png",
+    "rdoc/images/delete.png",
+    "rdoc/images/find.png",
+    "rdoc/images/loadingAnimation.gif",
+    "rdoc/images/macFFBgHack.png",
+    "rdoc/images/package.png",
+    "rdoc/images/page_green.png",
+    "rdoc/images/page_white_text.png",
+    "rdoc/images/page_white_width.png",
+    "rdoc/images/plugin.png",
+    "rdoc/images/ruby.png",
+    "rdoc/images/tag_blue.png",
+    "rdoc/images/tag_green.png",
+    "rdoc/images/transparent.png",
+    "rdoc/images/wrench.png",
+    "rdoc/images/wrench_orange.png",
+    "rdoc/images/zoom.png",
+    "rdoc/index.html",
+    "rdoc/js/darkfish.js",
+    "rdoc/js/jquery.js",
+    "rdoc/js/navigation.js",
+    "rdoc/js/search.js",
+    "rdoc/js/search_index.js",
+    "rdoc/js/searcher.js",
+    "rdoc/rdoc.css",
+    "rdoc/table_of_contents.html",
     "spec/gem-list_spec.rb",
     "spec/spec_helper.rb"
   ]
